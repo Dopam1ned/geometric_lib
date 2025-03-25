@@ -1,11 +1,3 @@
-
-# How to use calculator:
-1. Run `python calculate.py`
-2. Enter the figure name. Available are Circle, Square.
-3. Enter the function: Area or Perimeter.
-4. Enter figure sizes. Radius for circle, one side for square.
-5. Get the answer!
-
 # Math formulas
 ## Area
 - Circle: `S = πR²`
@@ -19,3 +11,5 @@
 - Square: `P = 4a`
 - Triangle: `P = a + b + c`
 
+## General purpose
+This repository contains functions that calculate area, perimeter and circumference of circle and square.
