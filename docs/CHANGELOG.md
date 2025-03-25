@@ -1,0 +1,11 @@
+## История изменений
+- 86edb1c L-05: Update Docs. Add user agreement info
+- 438b89a L-05: Add user agreement
+- 6adb962 L-03: Docs added
+- 3049431 L-04: Add rectangle.py
+- b5b0fae L-04: Update docs for calculate.py
+- d76db2a L-04: Add calculate.py
+- 51c40eb L-04: Doc updated for triangle
+- d080c78 L-04: Triangle added
+- d078c8d L-03: Docs added
+- 8ba9aeb L-03: Circle and square added
