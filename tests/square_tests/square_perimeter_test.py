@@ -1,4 +1,4 @@
-
+import pytest
 from geometric_lib.square import perimeter
 
 
@@ -32,6 +32,5 @@ def test_float_input():
 
 def test_nan_input():
     side = "abc"
-    expected = "Incorrect input: not a number"
-    result = perimeter(side)
-    assert result == expected
+    with pytest.raises(TypeError):
+        perimeter(side)

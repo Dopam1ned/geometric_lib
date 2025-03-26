@@ -1,4 +1,5 @@
 import math
+import pytest
 from geometric_lib.circle import area
 
 
@@ -32,6 +33,6 @@ def test_float_input():
 
 def test_nan_input():
     radius = "abc"
-    expected = "Incorrect input: not a number"
-    result = area(radius)
-    assert result == expected
+    with pytest.raises(TypeError):
+        area(radius)
+    

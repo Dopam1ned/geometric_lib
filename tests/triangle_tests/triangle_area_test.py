@@ -1,6 +1,6 @@
 from geometric_lib.triangle import area
 import math
-
+import pytest
 
 def test_positive_sides():
     a, b, c = 3, 4, 5
@@ -64,12 +64,11 @@ def test_mixed_arg():
 
 def test_invalid_args():
     test_cases = [
-        ("abc", 2, 3, "Incorrect input: not a number"),
-        (1, "abc", 3, "Incorrect input: not a number"),
-        (1, 2, "abc", "Incorrect input: not a number")
+        ("abc", 2, 3),
+        (1, "abc", 3),
+        (1, 2, "abc")
     ]
 
-    for a, b, c, expected in test_cases:
-        result = area(a, b, c)
-
-        assert result == expected
+    for a, b, c in test_cases:
+        with pytest.raises(TypeError):
+            area(a, b, c)

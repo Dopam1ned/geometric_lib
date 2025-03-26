@@ -1,5 +1,12 @@
+from geometric_lib.circle import area
+from geometric_lib.circle import perimeter
+from geometric_lib.square import area
+from geometric_lib.square import perimeter
+from geometric_lib.triangle import area
+from geometric_lib.triangle import perimeter
 
-figs = ['circle', 'square']
+
+figs = ['circle', 'square', 'triangle']
 funcs = ['perimeter', 'area']
 sizes = {}
 
@@ -9,7 +16,7 @@ def calc(fig, func, size):
     assert func in funcs
 
     result = eval(f'{fig}.{func}(*{size})')
-    print(f'{func} of {fig} is {result}')
+    return result
 
 
 if __name__ == "__main__":

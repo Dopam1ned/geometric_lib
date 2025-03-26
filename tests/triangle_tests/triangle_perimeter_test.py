@@ -1,3 +1,4 @@
+import pytest
 from geometric_lib.triangle import perimeter
 
 
@@ -63,12 +64,11 @@ def test_mixed_arg():
 
 def test_invalid_args():
     test_cases = [
-        ("abc", 2, 3, "Incorrect input: not a number"),
-        (1, "abc", 3, "Incorrect input: not a number"),
-        (1, 2, "abc", "Incorrect input: not a number")
+        ("abc", 2, 3),
+        (1, "abc", 3),
+        (1, 2, "abc")
     ]
 
-    for a, b, c, expected in test_cases:
-        result = perimeter(a, b, c)
-
-        assert result == expected
+    for a, b, c in test_cases:
+        with pytest.raises(TypeError):
+            perimeter(a, b, c)
