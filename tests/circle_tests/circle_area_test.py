@@ -1,11 +1,13 @@
 import math
 from geometric_lib.circle import area
 
+
 def test_positive_input():
     radius = 3
     expected = math.pi * 3 * 3
     result = area(radius)
     assert result == expected
+
 
 def test_zero_input():
     radius = 0
@@ -13,11 +15,13 @@ def test_zero_input():
     result = area(radius)
     assert result == expected
 
+
 def test_negative_input():
     radius = -4
     expected = "Incorrect input: negative number"
     result = area(radius)
     assert result == expected
+
 
 def test_float_input():
     radius = 2.5
@@ -25,9 +29,9 @@ def test_float_input():
     result = area(radius)
     assert result == expected
 
+
 def test_nan_input():
     radius = "abc"
     expected = "Incorrect input: not a number"
     result = area(radius)
     assert result == expected
-    

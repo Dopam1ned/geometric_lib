@@ -2,7 +2,11 @@ import math
 
 
 def area(a, b, c):
-    if (not isinstance(a, (int, float))) or (not isinstance(b, (int, float))) or (not isinstance(c, (int, float))):
+    if (
+        not isinstance(a, (int, float))
+        or not isinstance(b, (int, float))
+        or not isinstance(c, (int, float))
+    ):
         return "Incorrect input: not a number"
     elif (a < 0) or (b < 0) or (c < 0):
         return "Incorrect input: negative number"
@@ -14,7 +18,11 @@ def area(a, b, c):
 
 
 def perimeter(a, b, c):
-    if (not isinstance(a, (int, float))) or (not isinstance(b, (int, float))) or (not isinstance(c, (int, float))):
+    if (
+        not isinstance(a, (int, float))
+        or not isinstance(b, (int, float))
+        or not isinstance(c, (int, float))
+    ):
         return "Incorrect input: not a number"
     elif (a <= 0) or (b <= 0) or (c <= 0):
         return "Incorrect input: negative or equal to zero number"

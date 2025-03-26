@@ -35,4 +35,3 @@ def test_nan_input():
     expected = "Incorrect input: not a number"
     result = perimeter(side)
     assert result == expected
-    

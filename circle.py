@@ -17,4 +17,3 @@ def perimeter(r):
         return "Incorrect input: negative number"
     else:
         return 2 * math.pi * r
-
