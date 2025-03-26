@@ -1,5 +1,6 @@
-import pytest
-from geometric_lib import square
+
+from geometric_lib.square import area
+
 
 def test_positive_input():
     side = 5

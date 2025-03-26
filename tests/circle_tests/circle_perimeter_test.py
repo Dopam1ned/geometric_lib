@@ -1,6 +1,5 @@
 import math
-import pytest
-from geometric_lib import circle
+from geometric_lib.circle import perimeter
 
 def test_positive_input():
     side = 3

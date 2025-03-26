@@ -1,5 +1,7 @@
-import pytest
-from geometric_lib import square
+
+from geometric_lib.square import perimeter
+
+
 
 def test_positive_input():
     side = 6
