@@ -1,23 +1,18 @@
-from geometric_lib.circle import area
-from geometric_lib.circle import perimeter
-from geometric_lib.square import area
-from geometric_lib.square import perimeter
-from geometric_lib.triangle import area
-from geometric_lib.triangle import perimeter
+from geometric_lib.circle import area as circle_area, perimeter as circle_perimeter
+from geometric_lib.square import area as square_area, perimeter as square_perimeter
+from geometric_lib.triangle import area as triangle_area, perimeter as triangle_perimeter
 
-
-figs = ['circle', 'square', 'triangle']
-funcs = ['perimeter', 'area']
-sizes = {}
-
+fig_funcs = {
+    'circle': {'area': circle_area, 'perimeter': circle_perimeter},
+    'square': {'area': square_area, 'perimeter': square_perimeter},
+    'triangle': {'area': triangle_area, 'perimeter': triangle_perimeter}
+}
 
 def calc(fig, func, size):
-    assert fig in figs
-    assert func in funcs
+    assert fig in fig_funcs
+    assert func in fig_funcs[fig]
 
-    result = eval(f'{fig}.{func}(*{size})')
-    return result
-
+    return fig_funcs[fig][func](*size)
 
 if __name__ == "__main__":
     func = ''
