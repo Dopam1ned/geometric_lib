@@ -18,6 +18,7 @@ fig_funcs = {
     'triangle': {'area': triangle_area, 'perimeter': triangle_perimeter}
 }
 
+
 def calc(fig, func, size):
     assert fig in fig_funcs
     assert func in fig_funcs[fig]
@@ -31,10 +32,10 @@ if __name__ == "__main__":
     size = list()
 
     while fig not in fig_funcs:
-        fig = input(f"Enter figure name, avaliable are {figs}:\n")
+        fig = input(f"Enter figure name, avaliable are {fig_funcs}:\n")
 
     while func not in fig_funcs[fig]:
-        func = input(f"Enter function name, avaliable are {funcs}:\n")
+        func = input(f"Enter function name, avaliable are {fig_funcs[fig]}:\n")
 
     while len(size) != sizes.get(f"{func}-{fig}", 1):
         size = list(map(int, input(
