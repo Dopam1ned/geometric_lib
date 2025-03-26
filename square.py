@@ -1,4 +1,3 @@
-
 def area(a):
     if not isinstance(a, (int, float)):
         return "Incorrect input: not a number"

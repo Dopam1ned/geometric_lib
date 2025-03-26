@@ -1,5 +1,6 @@
 import math
 
+
 def area(a, b, c):
     if (not isinstance(a, (int, float))) or (not isinstance(b, (int, float))) or (not isinstance(c, (int, float))):
         return "Incorrect input: not a number"
