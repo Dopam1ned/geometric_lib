@@ -1,7 +1,17 @@
 
 def area(a):
-    return a * a
+    if not isinstance(a, (int, float)):
+        return "Incorrect input: not a number"
+    elif a < 0:
+        return "Incorrect input: negative number"
+    else:
+        return a * a
 
 
 def perimeter(a):
-    return 4 * a
+    if not isinstance(a, (int, float)):
+        return "Incorrect input: not a number"
+    elif a < 0:
+        return "Incorrect input: negative number"
+    else:
+        return 4 * a
