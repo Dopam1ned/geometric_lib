@@ -35,4 +35,3 @@ def test_nan_input():
     radius = "abc"
     with pytest.raises(TypeError):
         area(radius)
-    

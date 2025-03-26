@@ -1,6 +1,6 @@
 from geometric_lib.calculate import calc
 import pytest
-import math
+
 
 def test_int_valid_input():
     fig = "triangle"
@@ -18,6 +18,7 @@ def test_float_valid_input():
     expected = 10
     result = calc(fig, fun, size)
     assert expected == result
+
 
 def test_invalid_input():
     fig = "unknown"

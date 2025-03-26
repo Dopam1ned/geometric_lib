@@ -2,6 +2,7 @@ from geometric_lib.triangle import area
 import math
 import pytest
 
+
 def test_positive_sides():
     a, b, c = 3, 4, 5
     expected = 6
