@@ -1,7 +1,12 @@
-
 def area(a):
-    return a * a
+    if a < 0:
+        return "Incorrect input: negative number"
+    else:
+        return a * a
 
 
 def perimeter(a):
-    return 4 * a
+    if a < 0:
+        return "Incorrect input: negative number"
+    else:
+        return 4 * a

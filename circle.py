@@ -2,9 +2,14 @@ import math
 
 
 def area(r):
-    return math.pi * r * r
+    if r < 0:
+        return "Incorrect input: negative number"
+    else:
+        return math.pi * r * r
 
 
 def perimeter(r):
-    return 2 * math.pi * r
-
+    if r < 0:
+        return "Incorrect input: negative number"
+    else:
+        return 2 * math.pi * r
