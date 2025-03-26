@@ -34,7 +34,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Запуск юнит-тестов
-        run: python -m pytest discover
+        run: python -m pytest
 
       - name: Проверка стиля кода (flake8)
         run: flake8 .
