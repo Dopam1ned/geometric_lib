@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Вывод информации
-        run: echo "ФИО: $FULL_NAME, Группа: $GROUP_NUMBER, GitHub: ${{ github.actor }}"
+        run: echo "ФИО: ${{ env.FULL_NAME }}, Группа: ${{ env.GROUP_NUMBER }}, GitHub: ${{ github.actor }}"
 
       - name: Checkout репозитория
         uses: actions/checkout@v4
