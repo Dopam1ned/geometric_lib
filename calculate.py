@@ -11,7 +11,7 @@ from geometric_lib.triangle import (
     perimeter as triangle_perimeter
 )
 
-
+sizes = {}
 fig_funcs = {
     'circle': {'area': circle_area, 'perimeter': circle_perimeter},
     'square': {'area': square_area, 'perimeter': square_perimeter},
