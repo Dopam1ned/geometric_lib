@@ -19,6 +19,11 @@ fig_funcs = {
 }
 
 
+fig = ['circle', 'square', 'triangle']
+fun = ['area', 'perimeter']
+size = {}
+
+
 def calc(fig, func, size):
     assert fig in fig_funcs
     assert func in fig_funcs[fig]
